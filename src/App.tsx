@@ -1,5 +1,5 @@
-import { ThemeProvider } from "styled-components"
-import { defaultTheme } from "./styles/themes/default"
+import { ThemeProvider } from 'styled-components'
+import { defaultTheme } from './styles/themes/default'
 import { GlobalStyle } from './styles/global'
 
 export function App() {
@@ -8,6 +8,5 @@ export function App() {
       <h1>Jesus Cristo Obrigado</h1>
       <GlobalStyle />
     </ThemeProvider>
-
   )
 }

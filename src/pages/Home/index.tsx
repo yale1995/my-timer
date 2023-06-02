@@ -11,11 +11,14 @@ import {
 } from './styles'
 
 export function Home() {
-  const { register, handleSubmit } = useForm()
+  const { register, handleSubmit, watch } = useForm()
 
   function handleCreateNewCycle(data: any) {
     console.log(data)
   }
+
+  const task = watch('task')
+  const isSubmitDisabled = !task
 
   return (
     <HomeContainer>
@@ -58,7 +61,7 @@ export function Home() {
           <span>0</span>
         </CountdownContainer>
 
-        <StartCountdownButton type="submit">
+        <StartCountdownButton type="submit" disabled={isSubmitDisabled}>
           <Play />
           Começar
         </StartCountdownButton>

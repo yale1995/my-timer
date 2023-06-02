@@ -38,7 +38,6 @@ const BaseInput = styled.input`
   color: ${(props) => props.theme['gray-100']};
 
   &::placeholder {
-    text-align: center;
     color: ${(props) => props.theme['gray-500']};
   }
 

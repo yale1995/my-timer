@@ -1,6 +1,11 @@
+import { useContext } from 'react'
 import { HistoryContainer, HistoryList, Status } from './styles'
+import { CyclesContext } from '../../context/CyclesContext'
 
 export function History() {
+  // eslint-disable-next-line no-unused-vars
+  const { cycles } = useContext(CyclesContext)
+
   return (
     <HistoryContainer>
       <h1>Meu histórico</h1>

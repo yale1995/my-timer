@@ -36,15 +36,21 @@ export function History() {
                 </td>
                 <td>
                   {cycle.finishedDate && (
-                    <Status statusColor="green">Concluído</Status>
+                    <Status statusColor="green" title="Concluído">
+                      Concluído
+                    </Status>
                   )}
 
                   {cycle.interruptedDate && (
-                    <Status statusColor="red">Interrompido</Status>
+                    <Status statusColor="red" title="Interrompido">
+                      Interrompido
+                    </Status>
                   )}
 
                   {!cycle.finishedDate && !cycle.interruptedDate && (
-                    <Status statusColor="green">Em Andamento</Status>
+                    <Status statusColor="yellow" title="Em andamento">
+                      Em Andamento
+                    </Status>
                   )}
                 </td>
               </tr>

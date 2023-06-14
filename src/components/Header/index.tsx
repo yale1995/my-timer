@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom'
 import myTimerLogo from '../../assets/Logo.svg'
 
 export function Header() {
+  console.log('testing git')
   return (
     <HeaderContainer>
       <img src={myTimerLogo} alt="My timer logo" title="My timer logo" />

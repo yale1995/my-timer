@@ -56,12 +56,20 @@ export function Home() {
         <Countdown />
 
         {activeCycle ? (
-          <StopCountdownButton type="button" onClick={interruptCurrentCycle}>
+          <StopCountdownButton
+            type="button"
+            onClick={interruptCurrentCycle}
+            title="Interrupt countdown"
+          >
             <HandPalm />
             Interromper
           </StopCountdownButton>
         ) : (
-          <StartCountdownButton type="submit" disabled={isSubmitDisabled}>
+          <StartCountdownButton
+            type="submit"
+            disabled={isSubmitDisabled}
+            title="Starts countdown"
+          >
             <Play />
             Começar
           </StartCountdownButton>

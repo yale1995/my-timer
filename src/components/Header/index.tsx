@@ -7,7 +7,7 @@ import myTimerLogo from '../../assets/Logo.svg'
 export function Header() {
   return (
     <HeaderContainer>
-      <img src={myTimerLogo} alt="My timer logo" />
+      <img src={myTimerLogo} alt="My timer logo" title="My timer logo" />
       <nav>
         <NavLink to="/" title="Timer">
           <Timer size={24} />
